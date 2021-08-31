@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+img {
+  max-width: 25%;
+}
+
+.container {
+  max-width: 90%;
+  margin: 1rem auto;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.col {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.col > * {
+  margin-bottom: 2rem;
+}
+
+.col h2 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.col p,
+.col a {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.93rem;
+}
+
+.col p {
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: start;
+  width: 95%;
+}
+
+.col a {
+  padding: 1rem;
+  width: 10rem;
+  text-align: center;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.orange a {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+}
+
+.orange a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan a {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+
+.cyan a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan a {
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+
+.dark-cyan a:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 23.5rem) {
+  .container {
+    max-width: 21.09375rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  img {
+    max-width: 35%;
+  }
+
+  .container {
+    max-width: 60rem;
+    display: flex;
+    margin: 3.7rem auto;
+  }
+
+  .orange {
+    border-top-left-radius: 0.85rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.85rem;
+  }
+
+  .dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.85rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.85rem;
+  }
+
+  .col {
+    padding-right: 4.2rem;
+  }
+
+  .col > * {
+    margin-bottom: 2rem;
+  }
+
+  .col p {
+    width: 100%;
+    line-height: 1.8;
+    margin-bottom: 6rem;
+  }
+}
