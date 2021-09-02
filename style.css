@@ -9,6 +9,7 @@
 
 body {
   background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
 }
 
 img {
@@ -119,23 +120,29 @@ img {
     max-width: 35%;
   }
 
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container {
     max-width: 60rem;
     display: flex;
-    margin: 3.7rem auto;
+    margin: 0 auto;
   }
 
   .orange {
-    border-top-left-radius: 0.85rem;
+    border-top-left-radius: 0.75rem;
     border-top-right-radius: 0;
-    border-bottom-left-radius: 0.85rem;
+    border-bottom-left-radius: 0.75rem;
   }
 
   .dark-cyan {
     background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 0.85rem;
+    border-top-right-radius: 0.75rem;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0.85rem;
+    border-bottom-right-radius: 0.75rem;
   }
 
   .col {
